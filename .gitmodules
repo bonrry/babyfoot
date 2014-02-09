@@ -1,0 +1,6 @@
+[submodule "pibuf"]
+	path = pibuf
+	url = git@github.com:rom1v/pibuf.git
+[submodule "delay"]
+	path = delay
+	url = git@github.com:rom1v/delay.git
