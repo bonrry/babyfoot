@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Babyfoot</string>
+    <string name="please_reconnect">Babyfoot not detected. Try replugging USB.</string>
+    <string name="notif_service_connected">Babyfoot service running</string>
+    <string name="notification_title">Babyfoot notif title</string>
+    <string name="notification_message">Babyfoot notif message</string>
+	<string name="menu_settings_start_new_game">New game</string>
+    <string name="accessory_connected">Babyfoot connected</string>
+    <string name="empty"></string>
+    <string name="score_zero">0</string>
+    <string name="score_separator">vs</string>
+    <string name="historic_title_blue">titreBlue</string>
+    <string name="historic_title_red">titreRed</string>
+    <string name="historic_image_blue">imgBlue</string>
+    <string name="historic_image_red">imgRed</string>
+    <string name="historic_timer">timer</string>
+    <string name="historic_team">team</string>
+    <string name="historic_point">point</string>
+    <string name="historic_type">type</string>
+    <string name="historic_cancelled">cancelled</string>
+    <string name="end_game_timer">The game will be closed in 10 seconds if the score is not modified</string>
+    <string name="console_undo">UNDO</string>
+    <string name="console_lob">LOB</string>
+    <string name="console_demi">DEMI</string>
+    <string name="event_goal">GOAL</string>
+    
+</resources>

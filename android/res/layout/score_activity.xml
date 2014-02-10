@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:keepScreenOn="true" >
+
+    
+    	<RelativeLayout
+	        android:id="@+id/score"
+	       	android:layout_width="match_parent"
+	        android:layout_height="220dp"
+	        android:background="@drawable/grass" >
+
+    	    <TextView
+	            android:id="@+id/txtRedScore"
+	            android:layout_width="300dp"
+		        android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:text="@string/score_zero"
+	            android:textStyle="bold"
+	            android:textColor="@color/redDark"
+	            android:background="@drawable/bg_transparent"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginBottom="15dp"
+	            android:textSize="130sp" />
+    	
+    	    <ImageView
+    	        android:id="@+id/startNewGame"
+    	        android:layout_width="wrap_content"
+    	        android:layout_height="wrap_content"
+    	        android:layout_centerHorizontal="true"
+    	        android:layout_centerVertical="true"
+    	        android:onClick="startNewGame"
+    	        android:src="@drawable/ic_whistle"
+    	        android:contentDescription="@string/empty" />
+
+    	    <Chronometer
+    	        android:id="@+id/chronometer"
+    	        android:layout_width="match_parent"
+    	        android:layout_height="wrap_content"
+    	        android:layout_alignParentBottom="true"
+    	        android:format="%s"
+    	        android:gravity="bottom|center_horizontal"
+    	        android:textColor="@android:color/white"
+    	        android:textSize="30sp"
+            	android:textStyle="italic" />
+	    	    
+    	    <TextView
+	            android:id="@+id/txtBlueScore"
+	            android:layout_width="300dp"
+		        android:layout_height="match_parent"
+	            android:gravity="center"
+	            android:text="@string/score_zero"
+	            android:textStyle="bold"
+	            android:textColor="@color/blueDark"
+	            android:background="@drawable/bg_transparent"
+	            android:layout_marginTop="15dp"
+	            android:layout_marginBottom="15dp"
+	            android:layout_alignParentRight="true"
+	            android:textSize="130sp" />
+    	    
+    	    <Button
+		     	android:id="@+id/butSpecialGoalGamelleRed"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		        android:background="@drawable/ic_console_gamelle"
+		        android:onClick="specialGoalGamelle"
+		        android:enabled="false" 
+		        android:layout_alignParentLeft="true"
+		        style="?android:attr/buttonBarButtonStyle"/>
+    	    
+    	    <Button
+		     	android:id="@+id/butSpecialGoalGamelleBlue"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		        android:background="@drawable/ic_console_gamelle"
+		        android:onClick="specialGoalGamelle"
+		        android:enabled="false" 
+		        android:layout_alignParentRight="true"
+		        style="?android:attr/buttonBarButtonStyle"/>
+    	    
+    	</RelativeLayout>
+    	
+    	<net.bonrry.babyfoot.HorizontalListView
+		    android:id="@+id/historic"
+	        android:layout_width="match_parent"
+	        android:layout_height="100dp"
+	        android:layout_below="@id/score" />
+    	
+ 
+
+		<RelativeLayout
+	        android:id="@+id/console"
+	       	android:layout_width="match_parent"
+	        android:layout_height="256dp"
+	        android:layout_alignParentBottom="true" >        
+          
+		    <Button
+	            android:id="@+id/butSpecialGoalDemi"
+	            android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	            android:layout_gravity="center_horizontal"
+	            android:background="@drawable/ic_console_demi"
+	            android:onClick="specialGoalDemi"
+	            android:enabled="false" 
+	            android:text="@string/console_demi"
+	            android:textSize="50sp"
+	            android:textStyle="bold"
+	            android:textColor="@android:color/white"
+	            android:visibility="gone"
+		        style="?android:attr/buttonBarButtonStyle" />
+		    
+	        <Button
+	            android:id="@+id/butUndoLastGoal"
+	           	android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+	            android:background="@drawable/ic_console_cancel"
+	            android:onClick="undoLastGoal"
+	            android:enabled="false"
+	            android:text="@string/console_undo"
+	            android:textSize="50sp"
+	            android:textStyle="bold"
+	            android:gravity="center"
+				android:layout_centerHorizontal="true" 
+	            android:textColor="@android:color/white"
+	            android:visibility="gone"
+		        style="?android:attr/buttonBarButtonStyle" />
+	                    
+	        <Button
+		     	android:id="@+id/butSpecialGoalLob"
+		        android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+		        android:background="@drawable/ic_console_lob"
+		        android:onClick="specialGoalLob"
+		        android:enabled="false" 
+		        android:text="@string/console_lob"
+		        android:textSize="50sp"
+		        android:textStyle="bold"
+		        android:layout_alignParentRight="true"
+		        android:textColor="@android:color/white"
+	            android:visibility="gone"
+		        style="?android:attr/buttonBarButtonStyle"/>
+	
+       	</RelativeLayout>
+      
+        <TextView
+           	android:id="@+id/txtEndGame"
+           	android:layout_width="fill_parent"
+   			android:layout_height="wrap_content"
+            android:background="@color/redLight"
+            android:gravity="center"
+            android:text="@string/end_game_timer"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+            android:textSize="16sp" />
+		        
+	
+	    
+</RelativeLayout>
